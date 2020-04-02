@@ -1,8 +1,23 @@
-import React, { Component } from 'react'
-import { Helmet } from 'react-helmet'
+import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
+import axios from 'axios';
 
 export default class Contato extends Component {
+ 
+  state = {
+    contato: {}
+  }
+
+  componentDidMount = () => {
+    axios.get("http://localhost:3000/contato")
+    .then (resposta => {
+      this.setState({ contato: resposta.data })
+    })
+  }
+
   render() {
+    const { contato } = this.state
+
     return (
       <>
         <Helmet>
@@ -12,16 +27,21 @@ export default class Contato extends Component {
           <div className="conteudo">
             <div className="flex">
               <div className="resumo">
-                <h1>Me contrate!</h1>
-                <p>Estou disponível para trabalhos freelancer</p>
-                <h2>Meus Contatos</h2>
-
-                <p>Email: meu@memail.com</p>
-                <p>Telefone: 19 0000-0000</p>
-                <p>Github</p>
-                <p>Linkedin</p>
+                <h1>{contato.titulo}</h1>
+                <p>{contato.subtitulo}</p>
+                <h2>{contato.informacao}</h2>
+                {contato.contatos !== undefined && (
+                <ul>
+                {contato.contatos.map(item => (
+                  <li key={item.id}>
+                  <p>{item.tipo}</p>
+                  <p>{item.contato}</p>
+                  </li>
+                ))}
+                </ul>
+                )}
               </div>
-              <img src="http://trydo.rainbowit.net/assets/images/about/about-6.jpg" alt="Perfil" />
+              <img src={contato.foto} alt="Perfil" />
             </div>
           </div>
         </div>

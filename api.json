@@ -1,0 +1,55 @@
+{
+  "home": {
+    "foto": "http://trydo.rainbowit.net/assets/images/about/about-7.jpg",
+    "nome": "Maria Santos",
+    "resumo": "Estudante de Programação, adoro seguir hypes e desenvolver novas skills Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, facilis quam rem dicta tempora dolorem. Dolores, autem illo possimus earum, pariatur, maiores deleniti corporis modi omnis laudantium hic a asperiores!",
+    "stacks": [
+      "React",
+      "Redux",
+      "JSX",
+      "Consumo de APIs Rest",
+      "ES6+",
+      "HTML",
+      "CSS"
+    ]
+  },
+  "contato": {
+    "foto": "http://trydo.rainbowit.net/assets/images/about/about-6.jpg",
+    "titulo": "Me contrate!",
+    "subtitulo": "Estou disponível para trabalhos freelancer",
+    "informacao": "Meus Contatos",
+    "contatos": [
+      {
+        "id": 1,
+        "tipo": "email",
+        "contato": "front@google.com"
+      },
+      {
+        "id": 2,
+        "tipo": "telefone",
+        "contato": "19 0000-0000"
+      }
+    ]
+  },
+  "portfolio": {
+    "titulo": "Meu portfólio",
+    "imagens": [
+      {
+        "id": 1,
+        "foto": "https://neilpatel.com/wp-content/uploads/2017/07/pagina-de-contato-no-layout-de-site.jpeg"
+      },
+      {
+        "id": 2,
+        "foto": "https://www.webmaster.pt/wp-content/uploads/2015/10/thtml_salique-e1446032108574.jpg"
+      },
+      {
+        "id": 3,
+        "foto": "https://gestaodeprojetosdigitais.sfo2.cdn.digitaloceanspaces.com/2017/02/como-apresentar-o-layout-do-site-ao-cliente.jpg"
+      },
+      {
+        "id": 4,
+        "foto": "https://davisolucoes.com.br/sites/default/files/2019-06/angela-barroco-imoveis-mockup.jpg"
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaEnvelope, FaHome } from 'react-icons/fa'
+import { FaEnvelope, FaHome, FaLaptopCode } from 'react-icons/fa'
 
 function Header() {
   return (
@@ -13,6 +13,10 @@ function Header() {
         <FaEnvelope />
         Contato
       </Link>
+      <Link to="/portfolio">
+        <FaLaptopCode />
+        Portfolio
+        </Link>
     </nav>
   )
 }

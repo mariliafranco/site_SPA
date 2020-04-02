@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet'
-import axios from 'axios'
+import { Helmet } from 'react-helmet';
+import axios from 'axios';
 
 export default class Home extends Component {
 
@@ -9,7 +9,7 @@ export default class Home extends Component {
   }
 
   componentDidMount = () => {
-    axios.get("http://localhost:4000/home")
+    axios.get("http://localhost:3000/home")
       .then(resposta => {
         this.setState({ conteudo: resposta.data })
       })
